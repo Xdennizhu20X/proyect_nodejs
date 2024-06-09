@@ -1,7 +1,6 @@
-const mongoose = require('./db'); // Importa la instancia de la conexión a la base de datos
-const Pelicula = require('./models/pelicula'); // Importa el modelo de películas
+const mongoose = require('./db'); 
+const Pelicula = require('./models/pelicula'); 
 
-// Crear las nuevas películas
 const nuevaPelicula1 = new Pelicula({
   nombre: 'The Avengers',
   genero: 'Acción',
@@ -14,7 +13,7 @@ const nuevaPelicula2 = new Pelicula({
   tipo: 'romance'
 });
 
-// Guardar las nuevas películas en la base de datos
+
 Promise.all([
   nuevaPelicula1.save(),
   nuevaPelicula2.save()

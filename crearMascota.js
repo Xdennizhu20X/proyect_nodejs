@@ -1,7 +1,7 @@
-const mongoose = require('./db'); // Importa la instancia de la conexión a la base de datos
-const Pet = require('./models/mascotas'); // Importa el modelo de mascotas
+const mongoose = require('./db'); 
+const Pet = require('./models/mascotas'); 
 
-// Crear las nuevas mascotas
+
 const nuevaMascota1 = new Pet({
   nombre: 'Luna',
   edad: 2,
@@ -16,7 +16,7 @@ const nuevaMascota2 = new Pet({
   raza: 'Labrador'
 });
 
-// Guardar las nuevas mascotas en la base de datos
+
 Promise.all([
   nuevaMascota1.save(),
   nuevaMascota2.save()
